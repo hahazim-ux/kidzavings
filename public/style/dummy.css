@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #AB0032;
+}
+
+.container {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  margin: 0 auto;
+  align-items: center;
+  /* border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff; */
+  overflow: hidden;
+}
+
+/* Ensure full-page height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+}
+
+/* Main container centered on page */
+.main-bg {
+  background: #AB0032;
+  width: 100%;
+  max-width: 375px; /* to maintain phone layout */
+  height: 100%;
+  max-height: 1200px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner box also centered */
+.inner-bg {
+  margin-top: 5px;
+  width: 90%;
+  max-width: 332px;
+  height: 600px;
+  background: #C0043B;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.logo-circle {
+  position: absolute;
+  top: 135px;
+  left: 137px;
+  width: 107px;
+  height: 105px;
+  border-radius: 50%;
+  background: linear-gradient(192.85deg, #FFFEFE 9.29%, #E9E2E2 55.33%);
+}
+
+.logo {
+  position: absolute;
+  top: 162px;
+  left: 145px;
+  width: 91px;
+  height: 51px;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 254px;
+  left: 75px;
+  width: 230px;
+  text-align: center;
+  font-family: 'Jersey 25', cursive;
+  font-size: 30px;
+  color: #fff;
+}
+
+.kidzavings-text {
+  position: absolute;
+  top: 313px;
+  left: 96px;
+  font-family: 'Jura', sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 4px 4px #F38B00;
+}
+
+.underline {
+  position: absolute;
+  top: 365px;
+  left: 101px;
+  width: 230px;
+  height: 4px;
+  background: #F38B00;
+  border-radius: 20px;
+}
+
+.subtext {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.qr-box {
+  position: absolute;
+  top: 459px;
+  left: 82px;
+  width: 211px;
+  height: 202px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+
+.qr-image {
+  position: absolute;
+  top: 474px;
+  left: 101px;
+  width: 173px;
+  height: 173px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.button {
+  position: absolute;
+  top: 670px;
+  left: 136px;
+  width: 105px;
+  height: 38px;
+  background: #F38B00;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover {
+    background: #e07a00;
+    text-decoration: none;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.left-logo {
+  position: absolute;
+  top: 305px;
+  left: 27px;
+  width: 70px;
+  height: 60px;
+}
+
+.tab-bar {
+  position: absolute;
+  bottom: 34px;
+  left: 0;
+  width: 375px;
+  height: 48px;
+  background: #F7F6F6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tab-item {
+  width: 75px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-color: #007AFF;
+  border-radius: 4px;
+}
+
+.chevron-left,
+.chevron-right,
+.share,
+.book,
+.square {
+  /* You can use icons or background images here instead */
+}
+
+.home-indicator {
+  position: absolute;
+  bottom: 0;
+  width: 134px;
+  height: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
