@@ -15,7 +15,7 @@
     <img src="{{ asset('images/kidzkl_logo.png') }}" class="logo" alt="Kidzania Logo">
 
     <h2 class="welcome-text">WELCOME TO</h2>
-    <h1 class="kidzavings-text">IDZAVINGS</h1>
+    <h1 class="kidzavings-text">CSSTEST</h1>
     <div class="underline"></div>
     <p class="subtext">Navigate Your Transactions Now</p>
 
