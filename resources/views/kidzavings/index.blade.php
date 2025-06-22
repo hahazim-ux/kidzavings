@@ -12,7 +12,7 @@
     <div class="main-bg"><div class="inner-bg"></div></div>
 
     <div class="logo-circle"></div>
-    <img src="{{ asset('images/kidz_logo.png') }}" class="logo" alt="Kidzania Logo">
+    <img src="{{ asset('images/kidzkl_logo.png') }}" class="logo" alt="Kidzania Logo">
 
     <h2 class="welcome-text">WELCOME TO</h2>
     <h1 class="kidzavings-text">IDZAVINGS</h1>
