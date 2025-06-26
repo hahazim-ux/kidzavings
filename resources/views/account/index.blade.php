@@ -32,7 +32,7 @@
   <tbody>
     <tr>
       <td data-label="Card Number">{{ $account->CardNumber }}</td>
-      <td data-label="Balance">{{ number_format($account->Balance, 2) }} Z</td>
+      <td data-label="Balance">{{ number_format($account->Balance, 2) }} <img src="{{ asset('images/kidzos.png') }}" class="kidzos-icon" alt="Kidzos currency"></td>
       <td data-label="Date Register">{{ \Carbon\Carbon::parse($account->RegisterDate)->format('d M Y') }}</td>
     </tr>
   </tbody>

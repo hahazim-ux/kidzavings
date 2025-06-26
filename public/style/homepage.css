@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   background: #AB0032;
 }
 
@@ -89,8 +89,8 @@ html, body {
   left: 75px;
   width: 230px;
   text-align: center;
-  font-family: 'Jersey 25', cursive;
-  font-size: 30px;
+  /* font-family: 'Jersey 25', cursive; */
+  font-size: 25px;
   color: #fff;
 }
 
@@ -98,7 +98,7 @@ html, body {
   position: absolute;
   top: 313px;
   left: 96px;
-  font-family: 'Jura', sans-serif;
+  /* font-family: 'Jura', sans-serif; */
   font-size: 45px;
   font-weight: 600;
   color: #fff;
@@ -120,8 +120,8 @@ html, body {
   top: 400px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
   color: #fff;
   text-align: center;
 }

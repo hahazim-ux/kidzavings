@@ -104,6 +104,15 @@ html, body {
   z-index: 11;
 }
 
+.kidzos-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 1px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+
 #reader {
   position: absolute;
   width: 280px;
