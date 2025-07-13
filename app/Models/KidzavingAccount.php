@@ -8,7 +8,7 @@ class KidzavingAccount extends Model
 {
     protected $table = 'dbo.KIDZAVING_ACCOUNT';
     protected $primaryKey = 'IdKidzavingsAccount';
-    public $timestamp = false;
+    public $timestamps = false;
 
     protected $fillable = [
         'IdKidzavingAccount', 'CardNumber', 'Balance', 'RegisterDate'
@@ -18,5 +18,11 @@ class KidzavingAccount extends Model
 {
     return $this->hasMany(KidzavingTransaction::class, 'IdKidzavingAccount', 'IdKidzavingAccount');
 }
+
+public function user()
+{
+    return $this->belongsTo(KidzavingUser::class, 'IdUniversal', 'IdUniversal');
+}
+
 
 }

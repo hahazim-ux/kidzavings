@@ -11,6 +11,7 @@ Route::get( '/scanQr', [KidzavingsController::class, 'scanner'])->name('scanQr.i
 // Route::get( '/account', [KidzavingsController::class, 'account'])->name('account.index');
 Route::get('/account/{cardNumber}', [AccountController::class, 'show']);
 
+
 Route::post('/verify-card', [AccountController::class, 'verify']);
 
 Route::get('/transaction/{cardNumber}', [TransactionController::class, 'index'])->name('transaction.index');
