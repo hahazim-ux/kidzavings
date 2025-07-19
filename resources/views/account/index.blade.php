@@ -23,10 +23,12 @@
       <img src="{{ asset('images/kidz_logo.png') }}" class="logo" alt="Kidzania Logo">
     </a>
 
+    <div class="kids-name">Kai, {{ $visitor->Name }} !</div>
+<!-- {{ $visitor->LastName }} -->
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <!-- <th>Name</th> -->
       <th>Card Number</th>
       <th>Balance</th>
       <th>Date Register</th>
@@ -34,7 +36,7 @@
   </thead>
   <tbody>
     <tr>
-      <td data-label="Name">{{ $visitor->Name }} {{ $visitor->LastName }}</td>
+      <!-- <td data-label="Name">{{ $visitor->Name }} {{ $visitor->LastName }}</td> -->
       <td data-label="Card Number">{{ $account->CardNumber }}</td>
       <td data-label="Balance">{{ number_format($account->Balance, 2) }} <img src="{{ asset('images/kidzos.png') }}" class="kidzos-icon" alt="Kidzos currency"></td>
       <td data-label="Date Register">{{ \Carbon\Carbon::parse($account->RegisterDate)->format('d M Y') }}</td>

@@ -21,7 +21,7 @@
 
 
     <div class="qr-box"></div>
-    <img src="{{ asset ('images/qr.jpg') }}" class="qr-image" alt="QR">
+    <img src="{{ asset ('images/treasury_logo.png') }}" class="qr-image" alt="QR">
 
     <div class="button">
       <a href="{{ route('scanQr.index') }}"><span class="button-text">Start Now</span></a>

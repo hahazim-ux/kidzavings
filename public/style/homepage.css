@@ -142,8 +142,8 @@ html, body {
   left: 101px;
   width: 173px;
   height: 173px;
-  border: 1px solid #000;
-  border-radius: 30px;
+  /* border: 1px solid #000;
+  border-radius: 30px; */
 }
 
 a {
