@@ -9,6 +9,21 @@ use Illuminate\Support\Facades\DB;
 class AccountController extends Controller
 {
 
+    public function index($cardNumber)
+{
+    $transaction = KidzavingAccount::where('CardNumber', $cardNumber)->first();
+
+    if (!$transaction) {
+        return redirect()->back()->with('error', 'Card not found.');
+    }
+
+    return view('transaction.index', [
+        'cardNumber' => $cardNumber,
+        'transaction' => $transaction
+    ]);
+}
+
+
     public function verify(Request $request)
     {
         $cardNumber = $request->input('cardNumber');

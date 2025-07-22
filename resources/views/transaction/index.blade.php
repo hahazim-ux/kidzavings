@@ -12,9 +12,11 @@
 <div class="container">
   <div class="main-bg"><div class ="inner-bg"></div></div>
 
-<a href="javascript:history.back()" class="btn-back">
+<a href="{{ route('account.index', ['cardNumber' => $account->CardNumber]) }}" class="btn-back">
     <i class="bi bi-chevron-left"></i>
 </a>
+
+
 
 
     <a href="{{ route('kidzavings.index') }}">

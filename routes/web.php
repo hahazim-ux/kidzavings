@@ -9,9 +9,8 @@ Route::get( '/try', [KidzavingsController::class, 'try'])->name('try.index');
 Route::get( '/kidzavings', [KidzavingsController::class, 'index'])->name('kidzavings.index');
 Route::get( '/scanQr', [KidzavingsController::class, 'scanner'])->name('scanQr.index');
 // Route::get( '/account', [KidzavingsController::class, 'account'])->name('account.index');
-Route::get('/account/{cardNumber}', [AccountController::class, 'show']);
+Route::get('/account/{cardNumber}', [AccountController::class, 'show'])->name('account.index');
+Route::get('/transaction/{cardNumber}', [TransactionController::class, 'index'])->name('transaction.index');
 
 
 Route::post('/verify-card', [AccountController::class, 'verify']);
-
-Route::get('/transaction/{cardNumber}', [TransactionController::class, 'index'])->name('transaction.index');
